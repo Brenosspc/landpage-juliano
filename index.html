@@ -53,34 +53,62 @@
         <a href="#auto">Auto</a>
         <a href="#imovel">Imóvel</a>
         <a href="#servicos">Serviços</a>
-        <a href="#sobre">Sobre</a>
         <a href="#depoimentos">Depoimentos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#sobre">Sobre</a>
       </nav>
 
-      <a class="btn btn--small header__cta" href="#sobre">Contato</a>
+      <a class="btn btn--small header__cta" href="#contato">Contato</a>
+
+      <button class="theme-toggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false" title="Alternar tema" data-theme-toggle>
+        <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 15.2A8.5 8.5 0 0 1 8.8 4a8.5 8.5 0 1 0 11.2 11.2Z"></path>
+        </svg>
+        <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+      </button>
     </div>
   </header>
 
   <main>
-    <section class="hero section" id="inicio">
+    <section class="hero" id="inicio">
       <div class="container hero__grid">
         <div class="hero__content">
-          <span class="section-kicker">Atendimento estratégico</span>
-          <h1>Encontre a solução ideal para seu imóvel, veículo ou projeto pessoal</h1>
-          <p>A Misegbahia conecta você às melhores opções para automóveis, imóveis e outros serviços, com atendimento próximo e direcionamento rápido.</p>
+          <span class="hero__eyebrow">Cotação online</span>
+          <h1>Proteção e planejamento para todos os aspectos da sua vida</h1>
+          <p>Soluções para veículos, imóveis, saúde e projetos pessoais, com atendimento direto e personalizado.</p>
+          <ul class="hero__benefits" aria-label="Benefícios da simulação">
+            <li>Simulação gratuita</li>
+            <li>Sem compromisso</li>
+            <li>Atendimento direto com Juliano</li>
+          </ul>
           <div class="hero__actions">
-            <a class="btn" href="#auto">Conhecer soluções</a>
-            <a class="btn btn--outline" href="#sobre">Falar com consultor</a>
+            <a class="btn" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20fazer%20uma%20simula%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Solicitar uma cotação</a>
+            <a class="btn btn--outline" href="#como-funciona">Como funciona</a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <figure class="hero__visual">
-          <img src="assets/images/juliano-hero.png" alt="Juliano, responsável pela Misegbahia, em ambiente profissional" width="630" height="850">
-          <figcaption>
-            <strong>Atendimento próximo e especializado</strong>
-            <span>Orientação para encontrar a solução ideal.</span>
-          </figcaption>
-        </figure>
+    <section class="trust-strip" aria-label="Informações verificadas sobre a Misegbahia">
+      <div class="container trust-strip__grid">
+        <div class="trust-item">
+          <strong>Empresa ativa</strong>
+          <span>CNPJ registrado</span>
+        </div>
+        <div class="trust-item">
+          <strong>Desde 2021</strong>
+          <span>Atuação no mercado</span>
+        </div>
+        <div class="trust-item">
+          <strong>Salvador, Bahia</strong>
+          <span>Atendimento próximo</span>
+        </div>
+        <div class="trust-item">
+          <strong>Seguros e benefícios</strong>
+          <span>Soluções personalizadas</span>
         </div>
       </div>
     </section>
@@ -105,7 +133,7 @@
             </div>
             <h3>Caminhão</h3>
             <p>Soluções para quem trabalha, transporta e precisa avançar com segurança.</p>
-            <a class="btn btn--small" href="#sobre">Fazer Simulação</a>
+            <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20simular%20uma%20solu%C3%A7%C3%A3o%20para%20caminh%C3%A3o." target="_blank" rel="noopener noreferrer">Simular caminhão</a>
           </article>
 
           <article class="solution-card">
@@ -119,7 +147,7 @@
             </div>
             <h3>Carro</h3>
             <p>Opções para conquistar, trocar ou planejar seu próximo veículo.</p>
-            <a class="btn btn--small" href="#sobre">Fazer Simulação</a>
+            <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20simular%20uma%20solu%C3%A7%C3%A3o%20para%20carro." target="_blank" rel="noopener noreferrer">Simular carro</a>
           </article>
 
           <article class="solution-card">
@@ -132,7 +160,7 @@
             </div>
             <h3>Moto</h3>
             <p>Atendimento para quem busca praticidade, mobilidade e planejamento.</p>
-            <a class="btn btn--small" href="#sobre">Fazer Simulação</a>
+            <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20simular%20uma%20solu%C3%A7%C3%A3o%20para%20moto." target="_blank" rel="noopener noreferrer">Simular moto</a>
           </article>
         </div>
       </div>
@@ -160,7 +188,7 @@
                 </span>
                 <h3>Casa Pronta</h3>
                 <p>Encontre soluções para conquistar seu imóvel pronto.</p>
-                <a class="btn btn--small" href="#contato">Fazer simulação</a>
+                <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20simular%20uma%20solu%C3%A7%C3%A3o%20para%20casa%20pronta." target="_blank" rel="noopener noreferrer">Simular casa pronta</a>
               </article>
 
               <article class="property-card carousel__slide">
@@ -173,7 +201,7 @@
                 </span>
                 <h3>Terreno</h3>
                 <p>Conheça opções para adquirir seu terreno.</p>
-                <a class="btn btn--small" href="#contato">Fazer simulação</a>
+                <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20simular%20uma%20solu%C3%A7%C3%A3o%20para%20terreno." target="_blank" rel="noopener noreferrer">Simular terreno</a>
               </article>
 
               <article class="property-card carousel__slide">
@@ -186,7 +214,7 @@
                 </span>
                 <h3>Construir</h3>
                 <p>Planeje a construção do seu imóvel com o suporte ideal.</p>
-                <a class="btn btn--small" href="#contato">Fazer simulação</a>
+                <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20simular%20uma%20solu%C3%A7%C3%A3o%20para%20constru%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer">Simular construção</a>
               </article>
             </div>
           </div>
@@ -197,8 +225,9 @@
     </section>
 
     <section class="section section--alt services-social" id="servicos" aria-labelledby="servicos-title">
-      <div class="container split-grid">
-        <div class="split-panel">
+      <div class="container">
+        <div class="split-grid">
+          <div class="split-panel">
           <div class="section-heading section-heading--left">
             <span class="section-kicker">Serviços</span>
             <h2 id="servicos-title">Outras soluções para seus planos</h2>
@@ -218,7 +247,7 @@
                   </span>
                   <h3>Casamento</h3>
                   <p>Planeje esse momento especial com uma solução personalizada.</p>
-                  <a class="btn btn--small" href="#contato">Fazer simulação</a>
+                  <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20simular%20uma%20solu%C3%A7%C3%A3o%20para%20casamento." target="_blank" rel="noopener noreferrer">Simular casamento</a>
                 </article>
 
                 <article class="service-card carousel__slide">
@@ -229,7 +258,7 @@
                   </span>
                   <h3>Viagem</h3>
                   <p>Realize sua viagem com planejamento e suporte.</p>
-                  <a class="btn btn--small" href="#contato">Fazer simulação</a>
+                  <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20simular%20uma%20solu%C3%A7%C3%A3o%20para%20viagem." target="_blank" rel="noopener noreferrer">Simular viagem</a>
                 </article>
 
                 <article class="service-card carousel__slide">
@@ -240,56 +269,106 @@
                   </span>
                   <h3>Plano de Saúde</h3>
                   <p>Cuide da sua saúde com planejamento, segurança e suporte.</p>
-                  <a class="btn btn--small" href="#contato">Fazer simulação</a>
+                  <a class="btn btn--small" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20conhecer%20op%C3%A7%C3%B5es%20de%20plano%20de%20sa%C3%BAde." target="_blank" rel="noopener noreferrer">Simular plano de saúde</a>
                 </article>
               </div>
             </div>
             <button class="carousel__arrow carousel__arrow--next" type="button" aria-label="Ver próximo serviço" data-carousel-next>&gt;</button>
             <div class="carousel__dots" aria-label="Paginação do carrossel de serviços" data-carousel-dots></div>
           </div>
+          </div>
+
+          <aside class="split-panel testimonials" id="depoimentos" aria-labelledby="depoimentos-title">
+            <div class="section-heading section-heading--left">
+              <span class="section-kicker">Depoimentos</span>
+              <h2 id="depoimentos-title">Veja o que nossos clientes têm a dizer</h2>
+            </div>
+
+            <div class="testimonial-list">
+              <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                  <span class="testimonial-photo testimonial-photo--marcus" aria-hidden="true">
+                    <img src="assets/images/depoimentos-reais.png" alt="">
+                  </span>
+                  <div>
+                    <h3>Marcus Vinicius</h3>
+                    <span class="testimonial-topic">Plano de saúde e seguro de vida</span>
+                  </div>
+                </div>
+                <p>“Muita competência, excelência no atendimento, empatia e agilidade. Eficiência total na área de plano de saúde e seguro de vida. Eu recomendo a Misegbahia.”</p>
+              </article>
+
+              <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                  <span class="testimonial-photo testimonial-photo--michel" aria-hidden="true">
+                    <img src="assets/images/depoimentos-reais.png" alt="">
+                  </span>
+                  <div>
+                    <h3>Michel Marden</h3>
+                    <span class="testimonial-topic">Seguro de veículo</span>
+                  </div>
+                </div>
+                <p>“Registro o profissionalismo, empenho e atenção de Juliano Miranda na prestação do serviço de seguro do meu veículo.”</p>
+              </article>
+
+              <article class="testimonial-card">
+                <div class="testimonial-card__header">
+                  <span class="testimonial-photo testimonial-photo--iolanda" aria-hidden="true">
+                    <img src="assets/images/depoimentos-reais.png" alt="">
+                  </span>
+                  <div>
+                    <h3>Iolanda Guimarães</h3>
+                    <span class="testimonial-topic">Consórcio</span>
+                  </div>
+                </div>
+                <p>“Agradeço a Juliano Miranda e à Misegbahia. Estou no consórcio e não esperava ser contemplada tão rápido.”</p>
+              </article>
+            </div>
+          </aside>
         </div>
 
-        <aside class="split-panel testimonials" id="depoimentos" aria-labelledby="depoimentos-title">
-          <div class="section-heading section-heading--left">
-            <span class="section-kicker">Depoimentos</span>
-            <h2 id="depoimentos-title">Confiança de quem já foi atendido</h2>
+        <div class="client-showcase" aria-labelledby="clientes-title">
+          <div class="section-heading">
+            <span class="section-kicker">Nossos clientes</span>
+            <h2 id="clientes-title">Alguns dos clientes que confiam em nossas soluções</h2>
           </div>
-
-          <div class="testimonial-list">
-            <article class="testimonial-card">
-              <div class="testimonial-card__header">
-                <span class="avatar" aria-hidden="true">M</span>
-                <div>
-                  <h3>Mariana</h3>
-                  <p class="stars" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</p>
-                </div>
-              </div>
-              <p>“Fui muito bem atendida e consegui entender qual solução fazia mais sentido para mim.”</p>
-            </article>
-
-            <article class="testimonial-card">
-              <div class="testimonial-card__header">
-                <span class="avatar" aria-hidden="true">C</span>
-                <div>
-                  <h3>Carlos</h3>
-                  <p class="stars" aria-label="Avaliação: 5 de 5 estrelas">★★★★★</p>
-                </div>
-              </div>
-              <p>“A equipe foi clara, rápida e me direcionou para o serviço correto.”</p>
-            </article>
-
-            <article class="testimonial-card">
-              <div class="testimonial-card__header">
-                <span class="avatar" aria-hidden="true">F</span>
-                <div>
-                  <h3>Fernanda</h3>
-                  <p class="stars" aria-label="Avaliação: 4 de 5 estrelas">★★★★☆</p>
-                </div>
-              </div>
-              <p>“Gostei da praticidade da página e do contato direto pelo WhatsApp.”</p>
-            </article>
+          <div class="client-showcase__image">
+            <img src="assets/images/clientes-misegbahia.png" alt="Logotipos de clientes da Misegbahia: IGH, Sanlazzaro, FM Móveis, Engenharia Albuquerque e Líder Estágio" loading="lazy">
           </div>
-        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="como-funciona">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Simples e direto</span>
+          <h2>Como fazer sua simulação</h2>
+          <p>Você escolhe a solução e conversa diretamente com Juliano, sem formulários longos e sem compromisso.</p>
+        </div>
+
+        <ol class="process__grid">
+          <li class="process-step">
+            <span class="process-step__number">1</span>
+            <h3>Escolha a solução</h3>
+            <p>Selecione o veículo, imóvel ou serviço que deseja planejar.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-step__number">2</span>
+            <h3>Fale com Juliano</h3>
+            <p>O WhatsApp abre com uma mensagem pronta sobre seu interesse.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-step__number">3</span>
+            <h3>Receba sua simulação</h3>
+            <p>Informe os dados necessários e conheça as opções disponíveis.</p>
+          </li>
+          <li class="process-step">
+            <span class="process-step__number">4</span>
+            <h3>Avalie sem compromisso</h3>
+            <p>Compare as condições e decida com tranquilidade como continuar.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -316,7 +395,7 @@
             <div class="faq__item">
               <button type="button" class="faq__question" aria-expanded="false">Os links direcionam para o site principal?</button>
               <div class="faq__answer" hidden>
-                <p>Sim. Os botões foram preparados para direcionar cada categoria ao fluxo correspondente.</p>
+                <p>Os botões de simulação abrem diretamente o WhatsApp com uma mensagem relacionada à solução escolhida.</p>
               </div>
             </div>
             <div class="faq__item">
@@ -333,10 +412,16 @@
             <img src="assets/images/juliano-contato.jpeg" alt="Juliano, consultor da Misegbahia, pronto para atender" width="1600" height="1600" loading="lazy">
           </div>
           <div class="speech-bubble">Fale comigo e resolvo?</div>
-          <h2>Atendimento rápido e humano</h2>
-          <p>Converse com a equipe e receba o direcionamento certo para sua necessidade.</p>
+          <h2>Benedito Juliano Barbosa Miranda</h2>
+          <p class="consultant-role">Sócio-administrador da MISEGBAHIA</p>
+          <p>Fale diretamente com Juliano e receba atendimento personalizado para seguros, benefícios e planejamento dos seus projetos.</p>
+          <ul class="contact-assurances" aria-label="Vantagens do atendimento">
+            <li>Simulação gratuita</li>
+            <li>Sem compromisso</li>
+            <li>Atendimento personalizado</li>
+          </ul>
           <a class="btn whatsapp-card__button" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20vim%20pela%20landing%20page%20da%20Misegbahia%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Misegbahia pelo WhatsApp">
-            <span aria-hidden="true">WA</span> Falar pelo WhatsApp
+            Falar pelo WhatsApp
           </a>
         </aside>
       </div>
@@ -352,7 +437,7 @@
       </div>
       <div>
         <h3>Contato</h3>
-        <p>E-mail: <a href="mailto:[INSERIR E-MAIL INSTITUCIONAL]">juliano@misegbahia.com</a></p>
+        <p>E-mail: <a href="mailto:juliano@misegbahia.com">juliano@misegbahia.com</a></p>
         <p>Telefone celular: <a href="tel:+5571991567889">(71) 99156-7889</a></p>
         <p>CNPJ: 44.642.942/0001-49</p>
       </div>
@@ -370,6 +455,10 @@
       </div>
     </div>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5571991567889?text=Ol%C3%A1%2C%20Juliano!%20Vim%20pelo%20site%20da%20MISEGBAHIA%20e%20quero%20fazer%20uma%20simula%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" aria-label="Fazer simulação pelo WhatsApp">
+    <img src="assets/images/whatsapp-logo.png" alt="" aria-hidden="true">
+  </a>
 
   <script src="js/script.js" defer></script>
 </body>

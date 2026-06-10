@@ -1,4 +1,45 @@
 (function () {
+  const themeToggle = document.querySelector('[data-theme-toggle]');
+  const rootElement = document.documentElement;
+
+  function getPreferredTheme() {
+    try {
+      const savedTheme = localStorage.getItem('misegbahia-theme');
+
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        return savedTheme;
+      }
+    } catch (error) {
+      // The theme still works when browser storage is unavailable.
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  function applyTheme(theme) {
+    const isDark = theme === 'dark';
+    rootElement.dataset.theme = theme;
+
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-pressed', String(isDark));
+      themeToggle.setAttribute('aria-label', isDark ? 'Ativar tema claro' : 'Ativar tema escuro');
+      themeToggle.title = isDark ? 'Ativar tema claro' : 'Ativar tema escuro';
+    }
+  }
+
+  applyTheme(getPreferredTheme());
+
+  themeToggle?.addEventListener('click', () => {
+    const nextTheme = rootElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme);
+
+    try {
+      localStorage.setItem('misegbahia-theme', nextTheme);
+    } catch (error) {
+      // Ignore storage errors without blocking the visual theme change.
+    }
+  });
+
   const menuToggle = document.querySelector('[data-menu-toggle]');
   const nav = document.querySelector('[data-nav]');
 
@@ -106,4 +147,32 @@
       }
     });
   });
+
+  const revealElements = document.querySelectorAll(
+    '.section-heading, .solution-card, .carousel, .testimonial-card, .client-showcase, .process-step, .about__content, .whatsapp-card, .trust-item'
+  );
+
+  revealElements.forEach((element, index) => {
+    element.classList.add('reveal');
+    element.style.setProperty('--reveal-delay', `${(index % 4) * 70}ms`);
+  });
+
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+        } else {
+          entry.target.classList.remove('is-visible');
+        }
+      });
+    }, {
+      rootMargin: '-4% 0px -8% 0px',
+      threshold: 0.1
+    });
+
+    revealElements.forEach((element) => revealObserver.observe(element));
+  } else {
+    revealElements.forEach((element) => element.classList.add('is-visible'));
+  }
 })();
